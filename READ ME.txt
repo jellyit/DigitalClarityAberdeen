@@ -1,0 +1,8 @@
+DIGITAL CLARITY ABERDEEN
+
+1. Extract the whole ZIP folder.
+2. Double-click index.html to view the website in your browser.
+
+Keep index.html, styles.css, script.js, favicon.png and the images folder together.
+No installation or web server is needed. The page works offline.
+The contact button opens your email application to contactus@dcaberdeen.com; sending email requires an internet connection.
