@@ -53,6 +53,29 @@ body{line-height:1.5}button{color:inherit}svg{vertical-align:middle;flex-shrink:
 @media(min-width:1101px){.consultation .consultation-actions{display:flex;flex-wrap:wrap;width:auto;gap:24px}.consultation .social-links{justify-self:auto}.consultation .methods{flex-basis:100%}}
 @media(min-width:651px) and (max-width:1100px){.consultation .social-links{margin:0}}
 @media(max-width:650px){.consultation .social-links{flex-basis:auto;justify-content:flex-start;margin:0}}
+/* Consistent page gutter and alignment for the consultation content. */
+:root{--page-gutter:4.25%}
+.header{padding-left:var(--page-gutter);padding-right:var(--page-gutter)}
+.hero-copy{padding-left:var(--page-gutter);padding-right:var(--page-gutter)}
+.consultation-content{padding-left:var(--page-gutter);padding-right:var(--page-gutter)}
+.consultation-heading{position:relative;display:block;padding-left:0}
+.consultation-heading>svg{position:absolute;left:0;top:0;width:58px;height:58px}
+.consultation-heading>div{padding-left:80px}
+.consultation .consultation-actions{margin-top:26px;align-items:center;gap:24px}
+.consultation .methods{margin-top:8px}
+.pricing-hero,.pricing-section,.pricing-promise{padding-left:var(--page-gutter);padding-right:var(--page-gutter)}
+@media(max-width:650px){:root{--page-gutter:22px}.header{padding-left:var(--page-gutter);padding-right:var(--page-gutter)}.consultation-heading>svg{width:42px;height:46px}.consultation-heading>div{padding-left:58px}.consultation .consultation-actions{gap:18px}.consultation .methods{margin-top:4px}}
+/* Align visible content, including nested cards, to the same page edge. */
+:root{--page-gutter:4.25vw}
+.header .brand{transform:translateX(-2.43%)}
+#services>.service:first-child{padding-left:var(--page-gutter)}
+.assurances{padding-left:var(--page-gutter);padding-right:var(--page-gutter)}
+.assurances .assurance{justify-content:flex-start;padding-left:24px;padding-right:24px}
+.assurances .assurance:first-child{padding-left:0}
+.consultation-heading{display:flex;flex-direction:column;align-items:flex-start;gap:14px}
+.consultation-heading>svg{position:static;width:48px;height:48px}
+.consultation-heading>div{padding-left:0}
+@media(max-width:650px){:root{--page-gutter:22px}.assurances .assurance{padding:0}.consultation-heading>svg{width:42px;height:42px}.consultation-heading{gap:12px}}
 
 .detail-dialog{border:0;border-radius:12px;color:#063864;background:#fff;width:560px;max-height:85vh;overflow:auto;box-shadow:0 20px 80px #001d3c55;position:fixed;inset:0;margin:auto}.detail-dialog::backdrop{background:#00253c66;backdrop-filter:blur(3px)}.detail-dialog[open]{display:flex;flex-direction:column}.dialog-close{position:absolute;right:10px;top:8px;background:transparent;font-size:28px;line-height:1;padding:7px}.detail-dialog .button{align-self:flex-start}.dialog-title{margin-top:0}.dialog-copy{margin:0}body.modal-open{overflow:hidden}
 
